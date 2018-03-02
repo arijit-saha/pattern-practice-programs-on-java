@@ -14,7 +14,9 @@ public class AlphabetAndNumber {
 		switch(ch) {
 			case 'A' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(i!=0 && (j==0 || j==n/2) || (i==0 && j>0 && j<n/2) || (i==n/2 && j>0 && j<n/2))
+						if(i!=0 && (j==0 || j==n/2)
+						   || (i==0 && j>0 && j<n/2) 
+						   || (i==n/2 && j>0 && j<n/2))
 							System.out.print("*"); 
 						else
 							System.out.print(" ");
@@ -25,7 +27,8 @@ public class AlphabetAndNumber {
 			
 			case 'B' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0||(i==0||i==n/2||i==n-1)&&j<n/2 || j==n/2&&(i!=0&&i!=n/2&&i!=n-1))
+						if(j==0||(i==0||i==n/2||i==n-1)&&j<n/2 
+						   || j==n/2&&(i!=0&&i!=n/2&&i!=n-1))
 							System.out.print("*");
 						else
 							System.out.print(" ");
@@ -36,7 +39,9 @@ public class AlphabetAndNumber {
 
 			case 'C' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if((i==0 && j>0) || (i==n-1 && j>0) || (j==0 && i!=0 && i!=n-1))
+						if((i==0 && j>0) 
+						   || (i==n-1 && j>0) 
+						   || (j==0 && i!=0 && i!=n-1))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -47,7 +52,8 @@ public class AlphabetAndNumber {
 
 			case 'D' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0||(i==0||i==n-1)&&j<=n/2 || j==n/2+1&&(i!=0&&i!=n-1))
+						if(j==0||(i==0||i==n-1)&&j<=n/2 
+						   || j==n/2+1&&(i!=0&&i!=n-1))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -59,7 +65,8 @@ public class AlphabetAndNumber {
 
 			case 'E' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0||(i==0||i==n/2||i==n-1)&&j<n/2 || (i==0||i==n-1)&&j<n/2+2)
+						if(j==0||(i==0||i==n/2||i==n-1)&&j<n/2 
+						   || (i==0||i==n-1)&&j<n/2+2)
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -70,7 +77,8 @@ public class AlphabetAndNumber {
 
 			case 'F' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if((j==0||i==0&&j<n/2+2) || (i==n/2&&j<n/2))
+						if((j==0||i==0&&j<n/2+2) 
+						   || (i==n/2&&j<n/2))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -96,7 +104,9 @@ public class AlphabetAndNumber {
 
 			case 'H' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0 || (i==n/2&&j<n/2+2) || (j==n/2+2)) {
+						if(j==0 
+						   || (i==n/2&&j<n/2+2) 
+						   || (j==n/2+2)) {
 						System.out.print("*"); }
 						else {
 						System.out.print(" "); }
@@ -107,7 +117,9 @@ public class AlphabetAndNumber {
 
 			case 'I' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if((i==0&&(j>n/2-3&&j<n/2+3)) || j==n/2 || (i==n-1&&(j>n/2-3&&j<n/2+3)))
+						if((i==0&&(j>n/2-3&&j<n/2+3)) 
+						   || j==n/2 
+						   || (i==n-1&&(j>n/2-3&&j<n/2+3)))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -132,7 +144,8 @@ public class AlphabetAndNumber {
 
 			case 'K' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0 || i+j==n-1 || i==j&&(!(i>=0&&i<=n/2-1)))
+						if(j==0 || i+j==n-1 
+						   || i==j&&(!(i>=0&&i<=n/2-1)))
 							System.out.print("*");
 						else
 							System.out.print(" ");
@@ -143,7 +156,8 @@ public class AlphabetAndNumber {
 
 			case 'L' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0&&i!=n-1 || j!=0&&i==n-1)
+						if(j==0&&i!=n-1 
+						   || j!=0&&i==n-1)
 							System.out.print("*");
 						else
 							System.out.print(" ");
@@ -154,7 +168,9 @@ public class AlphabetAndNumber {
 
 			case 'M' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0 || i==j&&(j>0&&j<=n/2) || i+j==n-(n/2-1)+2&&(j>=n/2&&j<n) || j==n-1)
+						if(j==0 || i==j&&(j>0&&j<=n/2) 
+						   || i+j==n-(n/2-1)+2&&(j>=n/2&&j<n) 
+						   || j==n-1)
 							System.out.print("*");
 						else
 							System.out.print(" ");
@@ -165,7 +181,9 @@ public class AlphabetAndNumber {
 
 			case 'N' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(((i>=0&&i<=n-1)&&j==0) || (i==j) ||((i>=0&&i<=n-1)&&j==n-1))
+						if((i>=0&&i<=n-1)&&j==0 
+						   || i==j 
+						   ||(i>=0&&i<=n-1)&&j==n-1)
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -176,7 +194,10 @@ public class AlphabetAndNumber {
 
 			case 'O' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0&&(i>0&&i<n-1) || (i==0&&(j>0&&j<n/2))|| ((i==n-1&&(j>0&&j<n/2))) || j==n/2&&(i>0&&i<n-1))
+						if(j==0&&(i>0&&i<n-1) 
+						   || (i==0&&(j>0&&j<n/2))
+						   || ((i==n-1&&(j>0&&j<n/2))) 
+						   || j==n/2&&(i>0&&i<n-1))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -187,7 +208,9 @@ public class AlphabetAndNumber {
 
 			case 'P' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(j==0 || (i==0||i==n/2)&&j<n/2+1 || (i>=1&&i<=n/2-1)&&j==n/2+1)
+						if(j==0 
+						   || (i==0||i==n/2)&&j<n/2+1 
+						   || (i>=1&&i<=n/2-1)&&j==n/2+1)
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -228,7 +251,9 @@ public class AlphabetAndNumber {
 			
 			case 'S' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(((i>0&&i<n/2)&&j==0) || ((i==0||i==n/2||i==n-1)&&(j>0&&j<=n/2+1)) || ((i>n/2&&i<n-1)&&j==n/2+2))
+						if(((i>0&&i<n/2)&&j==0) 
+						   || ((i==0||i==n/2||i==n-1)&&(j>0&&j<=n/2+1)) 
+						   || ((i>n/2&&i<n-1)&&j==n/2+2))
 						System.out.print("*");
 						else
 						System.out.print(" ");
@@ -239,7 +264,8 @@ public class AlphabetAndNumber {
 
 			case 'T' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(i==0&&(j>=0&&j<n) || j==n/2&&(i>0&&i<n))
+						if(i==0&&(j>=0&&j<n) 
+						   || j==n/2&&(i>0&&i<n))
 							System.out.print("*");
 						else
 							System.out.print(" ");
@@ -250,7 +276,9 @@ public class AlphabetAndNumber {
 
 			case 'U' : for(int i=0; i<n; i++) {
 					for(int j=0; j<n; j++) {
-						if(((i>=0&&i<n-1)&&j==0) || (i==n-1&&(j>0&&j<n/2+2)) || ((i>=0&&i<n-1)&&j==n/2+2))
+						if(((i>=0&&i<n-1)&&j==0) 
+						   || (i==n-1&&(j>0&&j<n/2+2)) 
+						   || ((i>=0&&i<n-1)&&j==n/2+2))
 						System.out.print("*");
 						else
 						System.out.print(" ");
